@@ -1,0 +1,458 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36eeaa",
+        "name": "Mediterranean Quinoa Bowl",
+        "recipe": "Organic quinoa with roasted vegetables, feta cheese, kalamata olives, and lemon-herb vinaigrette",
+        "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=370&h=247&fit=crop",
+        "category": "salad",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb9",
+        "name": "Tropical Sunset Mocktail",
+        "recipe": "Fresh pineapple, mango, and passion fruit blend with coconut water and mint",
+        "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=370&h=247&fit=crop",
+        "category": "drinks",
+        "price": 8.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7c",
+        "name": "Truffle Mushroom Risotto",
+        "recipe": "Creamy arborio rice with wild mushrooms, white truffle oil, and parmesan cheese",
+        "image": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=370&h=247&fit=crop",
+        "category": "popular",
+        "price": 18.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee88",
+        "name": "Chocolate Lava Cake",
+        "recipe": "Warm chocolate cake with molten center, served with vanilla bean ice cream",
+        "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7a",
+        "name": "Grilled Salmon Teriyaki",
+        "recipe": "Atlantic salmon glazed with homemade teriyaki sauce, served with jasmine rice and steamed broccoli",
+        "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=370&h=247&fit=crop",
+        "category": "popular",
+        "price": 22.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8c",
+        "name": "Tiramisu Classico",
+        "recipe": "Traditional Italian dessert with espresso-soaked ladyfingers and mascarpone cream",
+        "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 8.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee94",
+        "name": "Margherita Pizza",
+        "recipe": "Wood-fired pizza with San Marzano tomatoes, fresh mozzarella, and basil leaves",
+        "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=370&h=247&fit=crop",
+        "category": "pizza",
+        "price": 16.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9e",
+        "name": "BBQ Chicken Pizza",
+        "recipe": "Smoked chicken, red onions, cilantro, and our signature barbecue sauce",
+        "image": "https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?w=370&h=247&fit=crop",
+        "category": "pizza",
+        "price": 18.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea6",
+        "name": "Greek Goddess Salad",
+        "recipe": "Mixed greens with cucumbers, tomatoes, red onions, peppers, and tzatziki dressing",
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=370&h=247&fit=crop",
+        "category": "salad",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeaf",
+        "name": "Tomato Basil Soup",
+        "recipe": "Creamy tomato soup with fresh basil, served with artisan bread",
+        "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=370&h=247&fit=crop",
+        "category": "soup",
+        "price": 7.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee89",
+        "name": "New York Cheesecake",
+        "recipe": "Classic creamy cheesecake with graham cracker crust and berry compote",
+        "image": "https://images.unsplash.com/photo-1567306301408-9b74779a11af?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8a",
+        "name": "Crème Brûlée",
+        "recipe": "Vanilla bean custard with caramelized sugar crust",
+        "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 8.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee96",
+        "name": "Pepperoni Passion",
+        "recipe": "Spicy pepperoni, mozzarella, and our signature pizza sauce",
+        "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=370&h=247&fit=crop",
+        "category": "pizza",
+        "price": 17.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee81",
+        "name": "Chef's Special Pasta",
+        "recipe": "Daily handmade pasta with seasonal ingredients and signature sauce",
+        "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=370&h=247&fit=crop",
+        "category": "offered",
+        "price": 16.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee84",
+        "name": "Berry Pavlova",
+        "recipe": "Crisp meringue topped with whipped cream and fresh seasonal berries",
+        "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 10.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea4",
+        "name": "Caesar Salad",
+        "recipe": "Romaine lettuce with parmesan, croutons, and classic Caesar dressing",
+        "image": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=370&h=247&fit=crop",
+        "category": "salad",
+        "price": 12.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea5",
+        "name": "Caprese Salad",
+        "recipe": "Fresh mozzarella, tomatoes, and basil with balsamic glaze",
+        "image": "https://images.unsplash.com/photo-1563379091339-03246963d8af?w=370&h=247&fit=crop",
+        "category": "salad",
+        "price": 11.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee87",
+        "name": "Chocolate Fondant",
+        "recipe": "Decadent chocolate cake with warm flowing center and raspberry sauce",
+        "image": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 10.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee83",
+        "name": "Seafood Platter",
+        "recipe": "Grilled shrimp, scallops, and calamari with lemon butter sauce",
+        "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=370&h=247&fit=crop",
+        "category": "offered",
+        "price": 24.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7f",
+        "name": "Beef Wellington",
+        "recipe": "Prime beef tenderloin wrapped in puff pastry with mushroom duxelles",
+        "image": "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=370&h=247&fit=crop",
+        "category": "popular",
+        "price": 32.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea8",
+        "name": "Asian Chicken Salad",
+        "recipe": "Grilled chicken with mandarin oranges, almonds, and sesame ginger dressing",
+        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=370&h=247&fit=crop",
+        "category": "salad",
+        "price": 15.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeba",
+        "name": "Mango Tango Smoothie",
+        "recipe": "Fresh mango, banana, Greek yogurt, and honey blend",
+        "image": "https://images.unsplash.com/photo-1636395553685-6d78e6c57c0b?w=370&h=247&fit=crop",
+        "category": "drinks",
+        "price": 7.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee80",
+        "name": "Lobster Thermidor",
+        "recipe": "Lobster meat in creamy brandy sauce, baked with parmesan crust",
+        "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=370&h=247&fit=crop",
+        "category": "offered",
+        "price": 28.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee90",
+        "name": "Lemon Meringue Pie",
+        "recipe": "Tangy lemon curd in buttery crust topped with toasted meringue",
+        "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 8.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb0",
+        "name": "French Onion Soup",
+        "recipe": "Caramelized onions in rich beef broth with croutons and gruyere cheese",
+        "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=370&h=247&fit=crop",
+        "category": "soup",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8d",
+        "name": "Apple Pie à la Mode",
+        "recipe": "Warm apple pie with cinnamon and vanilla ice cream",
+        "image": "https://images.unsplash.com/photo-1562007908-859b4ba9a1a2?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 8.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8e",
+        "name": "Panna Cotta",
+        "recipe": "Silky vanilla cream dessert with fresh berry coulis",
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 7.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea7",
+        "name": "Quinoa Power Bowl",
+        "recipe": "Superfood quinoa with avocado, edamame, and tahini dressing",
+        "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=370&h=247&fit=crop",
+        "category": "salad",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee99",
+        "name": "Four Cheese Pizza",
+        "recipe": "Mozzarella, gorgonzola, parmesan, and fontina cheese blend",
+        "image": "https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?w=370&h=247&fit=crop",
+        "category": "pizza",
+        "price": 19.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb3",
+        "name": "Cream of Mushroom",
+        "recipe": "Wild mushroom soup with truffle oil and herb croutons",
+        "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=370&h=247&fit=crop",
+        "category": "soup",
+        "price": 8.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb5",
+        "name": "Butternut Squash Soup",
+        "recipe": "Roasted butternut squash with ginger and coconut milk",
+        "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=370&h=247&fit=crop",
+        "category": "soup",
+        "price": 7.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb6",
+        "name": "Green Detox Smoothie",
+        "recipe": "Spinach, kale, pineapple, and ginger health booster",
+        "image": "https://images.unsplash.com/photo-1636395553685-6d78e6c57c0b?w=370&h=247&fit=crop",
+        "category": "drinks",
+        "price": 8.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb8",
+        "name": "Iced Caramel Macchiato",
+        "recipe": "Espresso with vanilla syrup, milk, and caramel drizzle",
+        "image": "https://images.unsplash.com/photo-1567306226416-28abc0ff0e6a?w=370&h=247&fit=crop",
+        "category": "drinks",
+        "price": 6.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7e",
+        "name": "Lamb Chops with Mint",
+        "recipe": "Grilled lamb chops with mint pesto and roasted potatoes",
+        "image": "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=370&h=247&fit=crop",
+        "category": "popular",
+        "price": 26.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8b",
+        "name": "Red Velvet Cake",
+        "recipe": "Moist red velvet layers with cream cheese frosting",
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8f",
+        "name": "Chocolate Mousse",
+        "recipe": "Dark chocolate mousse with whipped cream and chocolate shavings",
+        "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 8.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee91",
+        "name": "Berry Cheesecake",
+        "recipe": "New York style cheesecake with mixed berry topping",
+        "image": "https://images.unsplash.com/photo-1567306301408-9b74779a11af?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 10.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee97",
+        "name": "Vegetarian Supreme",
+        "recipe": "Bell peppers, mushrooms, onions, olives, and fresh tomatoes",
+        "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=370&h=247&fit=crop",
+        "category": "pizza",
+        "price": 17.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea0",
+        "name": "Hawaiian Pizza",
+        "recipe": "Ham, pineapple, and mozzarella with tomato sauce",
+        "image": "https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?w=370&h=247&fit=crop",
+        "category": "pizza",
+        "price": 18.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea9",
+        "name": "Spinach Strawberry Salad",
+        "recipe": "Baby spinach with strawberries, goat cheese, and poppyseed dressing",
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=370&h=247&fit=crop",
+        "category": "salad",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee85",
+        "name": "Chocolate Soufflé",
+        "recipe": "Light chocolate soufflé with powdered sugar and crème anglaise",
+        "image": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 11.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee93",
+        "name": "Spicy Diavola",
+        "recipe": "Spicy salami, chili flakes, and mozzarella on thin crust",
+        "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=370&h=247&fit=crop",
+        "category": "pizza",
+        "price": 19.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee95",
+        "name": "Meat Lovers Pizza",
+        "recipe": "Pepperoni, sausage, ham, and bacon with extra cheese",
+        "image": "https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?w=370&h=247&fit=crop",
+        "category": "pizza",
+        "price": 21.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9b",
+        "name": "White Pizza",
+        "recipe": "Ricotta, mozzarella, garlic, and fresh herbs on olive oil base",
+        "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=370&h=247&fit=crop",
+        "category": "pizza",
+        "price": 18.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb7",
+        "name": "Lentil Vegetable Soup",
+        "recipe": "Hearty lentil soup with carrots, celery, and herbs",
+        "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=370&h=247&fit=crop",
+        "category": "soup",
+        "price": 8.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9c",
+        "name": "Calzone",
+        "recipe": "Stuffed pizza with ricotta, mozzarella, and choice of fillings",
+        "image": "https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?w=370&h=247&fit=crop",
+        "category": "pizza",
+        "price": 16.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9d",
+        "name": "BBQ Pizza",
+        "recipe": "Chicken, red onions, and barbecue sauce with cilantro",
+        "image": "https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?w=370&h=247&fit=crop",
+        "category": "pizza",
+        "price": 19.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeac",
+        "name": "Waldorf Salad",
+        "recipe": "Apples, walnuts, celery, and grapes with mayonnaise dressing",
+        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=370&h=247&fit=crop",
+        "category": "salad",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb4",
+        "name": "Espresso Martini",
+        "recipe": "Vodka, coffee liqueur, and fresh espresso shake",
+        "image": "https://images.unsplash.com/photo-1470338754544-63d7f70d7b7d?w=370&h=247&fit=crop",
+        "category": "drinks",
+        "price": 12.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee98",
+        "name": "Buffalo Chicken Pizza",
+        "recipe": "Spicy buffalo chicken, blue cheese, and celery on pizza",
+        "image": "https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?w=370&h=247&fit=crop",
+        "category": "pizza",
+        "price": 20.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee82",
+        "name": "Truffle Pasta",
+        "recipe": "Fresh pasta with black truffle, cream sauce, and parmesan",
+        "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=370&h=247&fit=crop",
+        "category": "offered",
+        "price": 22.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee86",
+        "name": "Baklava",
+        "recipe": "Layered phyllo pastry with walnuts and honey syrup",
+        "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=370&h=247&fit=crop",
+        "category": "dessert",
+        "price": 7.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9a",
+        "name": "Pesto Pizza",
+        "recipe": "Basil pesto, cherry tomatoes, and fresh mozzarella",
+        "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=370&h=247&fit=crop",
+        "category": "pizza",
+        "price": 17.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeab",
+        "name": "Cobb Salad",
+        "recipe": "Mixed greens with chicken, bacon, eggs, avocado, and blue cheese",
+        "image": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=370&h=247&fit=crop",
+        "category": "salad",
+        "price": 16.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb1",
+        "name": "Minestrone Soup",
+        "recipe": "Italian vegetable soup with pasta, beans, and herbs",
+        "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=370&h=247&fit=crop",
+        "category": "soup",
+        "price": 8.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eead",
+        "name": "Clam Chowder",
+        "recipe": "New England style creamy clam chowder with potatoes",
+        "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=370&h=247&fit=crop",
+        "category": "soup",
+        "price": 10.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeae",
+        "name": "Gazpacho",
+        "recipe": "Chilled Spanish tomato soup with cucumbers and peppers",
+        "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=370&h=247&fit=crop",
+        "category": "soup",
+        "price": 7.5
+    }
+]
