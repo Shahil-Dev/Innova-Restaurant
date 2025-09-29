@@ -4,6 +4,7 @@ import SwiperSlider from '../Components/SwiperSlider';
 import Carousel from '../Components/Carousel';
 import PopularItem from '../Components/PopularItem';
 import Testimonial from '../Components/Testimonial';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
     // Icon Components
@@ -107,8 +108,8 @@ const Home = () => {
             </section>
 
             {/* Welcome Section - Enhanced with Animations */}
-            <section 
-                data-aos="fade-up" 
+            <section
+                data-aos="fade-up"
                 data-aos-duration="1500"
                 className="relative py-16 lg:py-24 bg-gradient-to-br from-gray-50 via-white to-orange-50 mb-16 lg:mb-24 overflow-hidden"
             >
@@ -135,8 +136,8 @@ const Home = () => {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
                     <div className="text-center max-w-4xl mx-auto">
                         {/* Animated Badge */}
-                        <div 
-                            data-aos="zoom-in" 
+                        <div
+                            data-aos="zoom-in"
                             data-aos-delay="200"
                             className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm font-semibold mb-6 lg:mb-8 shadow-lg animate-glow hover:scale-105 transition-transform duration-300 cursor-pointer"
                         >
@@ -145,8 +146,8 @@ const Home = () => {
                         </div>
 
                         {/* Main Heading with Text Shimmer */}
-                        <h2 
-                            data-aos="fade-up" 
+                        <h2
+                            data-aos="fade-up"
                             data-aos-delay="400"
                             className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 lg:mb-8'
                         >
@@ -156,8 +157,8 @@ const Home = () => {
                         </h2>
 
                         {/* Animated Description */}
-                        <p 
-                            data-aos="fade-up" 
+                        <p
+                            data-aos="fade-up"
                             data-aos-delay="600"
                             className='text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 lg:mb-12 max-w-3xl mx-auto px-4'
                         >
@@ -166,8 +167,8 @@ const Home = () => {
                         </p>
 
                         {/* Animated Stats Bar */}
-                        <div 
-                            data-aos="fade-up" 
+                        <div
+                            data-aos="fade-up"
                             data-aos-delay="800"
                             className="grid grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-2xl mx-auto mt-8 lg:mt-12"
                         >
@@ -176,9 +177,9 @@ const Home = () => {
                                 { number: "50+", label: "Master Chefs" },
                                 { number: "100+", label: "Menu Items" }
                             ].map((stat, index) => (
-                                <div 
-                                    key={index} 
-                                    data-aos="flip-up" 
+                                <div
+                                    key={index}
+                                    data-aos="flip-up"
                                     data-aos-delay={1000 + index * 200}
                                     className="text-center group"
                                 >
@@ -202,15 +203,15 @@ const Home = () => {
                     {/* Moving gradient overlay */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-50/30 to-transparent animate-shimmer"></div>
                 </div>
-                
+
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-                    <div 
-                        data-aos="fade-up" 
-                        data-aos-duration="1500" 
+                    <div
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
                         className="text-center mb-12 lg:mb-16"
                     >
-                        <h2 
-                            data-aos="zoom-in" 
+                        <h2
+                            data-aos="zoom-in"
                             data-aos-delay="200"
                             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
                         >
@@ -218,8 +219,8 @@ const Home = () => {
                                 Why Choose <span className='text-red-600 animate-pulse'>Innova</span>?
                             </span>
                         </h2>
-                        <p 
-                            data-aos="fade-up" 
+                        <p
+                            data-aos="fade-up"
                             data-aos-delay="400"
                             className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto px-4"
                         >
@@ -265,7 +266,7 @@ const Home = () => {
                             >
                                 <div className="relative bg-white rounded-2xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 h-full animate-glow hover:animate-none">
                                     {/* Animated Icon Container */}
-                                    <div 
+                                    <div
                                         className={`${feature.bgColor} w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg animate-bounce-subtle`}
                                     >
                                         <span className="text-xl sm:text-2xl group-hover:scale-110 transition-transform duration-300">
@@ -317,14 +318,14 @@ const Home = () => {
                 </div>
 
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-                    <div 
-                        data-aos="fade-up" 
-                        data-aos-duration="1500" 
+                    <div
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
                         className="text-center mb-12 lg:mb-16"
                     >
                         {/* Animated Badge */}
-                        <div 
-                            data-aos="zoom-in" 
+                        <div
+                            data-aos="zoom-in"
                             data-aos-delay="200"
                             className="inline-flex items-center bg-gradient-to-r from-orange-400 to-red-400 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm font-semibold mb-6 shadow-lg animate-glow"
                         >
@@ -333,8 +334,8 @@ const Home = () => {
                         </div>
 
                         {/* Heading with Text Animation */}
-                        <h2 
-                            data-aos="fade-up" 
+                        <h2
+                            data-aos="fade-up"
                             data-aos-delay="400"
                             className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4"
                         >
@@ -342,8 +343,8 @@ const Home = () => {
                         </h2>
 
                         {/* Animated Description */}
-                        <p 
-                            data-aos="fade-up" 
+                        <p
+                            data-aos="fade-up"
                             data-aos-delay="600"
                             className="text-gray-300 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed px-4"
                         >
@@ -352,9 +353,9 @@ const Home = () => {
                     </div>
 
                     {/* Carousel Section */}
-                    <div 
-                        data-aos="zoom-in" 
-                        data-aos-duration="1200" 
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-duration="1200"
                         data-aos-delay="800"
                         className="mb-12 lg:mb-16"
                     >
@@ -362,9 +363,9 @@ const Home = () => {
                     </div>
 
                     {/* Animated Stats Section */}
-                    <div 
-                        data-aos="fade-up" 
-                        data-aos-duration="1500" 
+                    <div
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
                         data-aos-delay="1000"
                         className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 max-w-4xl mx-auto"
                     >
@@ -374,9 +375,9 @@ const Home = () => {
                             { number: "30min", label: "Avg Delivery Time", color: "text-blue-400" },
                             { number: "50+", label: "Menu Items", color: "text-purple-400" }
                         ].map((stat, index) => (
-                            <div 
-                                key={index} 
-                                data-aos="flip-up" 
+                            <div
+                                key={index}
+                                data-aos="flip-up"
                                 data-aos-delay={1200 + index * 200}
                                 className="text-center group"
                             >
@@ -391,9 +392,9 @@ const Home = () => {
                     </div>
 
                     {/* Animated CTA Section */}
-                    <div 
-                        data-aos="zoom-in" 
-                        data-aos-duration="1000" 
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
                         data-aos-delay="1400"
                         className="text-center mt-12"
                     >
@@ -406,8 +407,8 @@ const Home = () => {
                             </span>
                             <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                         </button>
-                        <p 
-                            data-aos="fade-up" 
+                        <p
+                            data-aos="fade-up"
                             data-aos-delay="1600"
                             className="text-gray-400 mt-4 text-xs sm:text-sm"
                         >
@@ -420,9 +421,9 @@ const Home = () => {
             {/* Chef's Special Section - Enhanced with Animations */}
             <section className="relative py-16 lg:py-24 bg-gradient-to-br from-orange-50 via-white to-red-50 mb-16 lg:mb-24 overflow-hidden">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div 
-                        data-aos="fade-up" 
-                        data-aos-duration="1500" 
+                    <div
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
                         className="relative rounded-3xl overflow-hidden shadow-2xl animate-glow"
                     >
                         <div className="bg-gradient-to-br from-gray-900 via-orange-900 to-red-900 min-h-[400px] md:min-h-[500px] lg:min-h-[600px] relative">
@@ -441,12 +442,12 @@ const Home = () => {
                                     />
                                 ))}
                             </div>
-                            
+
                             <div className="relative z-10 flex items-center justify-center min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-6 sm:p-8">
                                 <div className="max-w-4xl mx-auto text-center">
                                     {/* Animated Badge */}
-                                    <div 
-                                        data-aos="zoom-in" 
+                                    <div
+                                        data-aos="zoom-in"
                                         data-aos-delay="200"
                                         className="inline-flex items-center bg-orange-500/20 backdrop-blur-sm text-orange-300 px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm font-semibold mb-6 lg:mb-8 border border-orange-400/30 animate-glow"
                                     >
@@ -454,8 +455,8 @@ const Home = () => {
                                     </div>
 
                                     {/* Main Heading with Animation */}
-                                    <h2 
-                                        data-aos="fade-up" 
+                                    <h2
+                                        data-aos="fade-up"
                                         data-aos-delay="400"
                                         className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 lg:mb-6 leading-tight"
                                     >
@@ -467,8 +468,8 @@ const Home = () => {
                                     </h2>
 
                                     {/* Animated Description */}
-                                    <p 
-                                        data-aos="fade-up" 
+                                    <p
+                                        data-aos="fade-up"
                                         data-aos-delay="600"
                                         className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 lg:mb-8 leading-relaxed max-w-3xl mx-auto px-4"
                                     >
@@ -477,8 +478,8 @@ const Home = () => {
                                     </p>
 
                                     {/* Animated CTA Button */}
-                                    <div 
-                                        data-aos="zoom-in" 
+                                    <div
+                                        data-aos="zoom-in"
                                         data-aos-delay="800"
                                         className="flex justify-center"
                                     >
@@ -522,23 +523,23 @@ const Home = () => {
                     <div className="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
                         <div className="w-full">
                             {/* Header Section with Animation */}
-                            <div 
-                                data-aos="fade-down" 
+                            <div
+                                data-aos="fade-down"
                                 data-aos-duration="1000"
                                 className="mb-12 text-center"
                             >
                                 <p className="text-amber-400 text-base sm:text-lg font-medium tracking-widest mb-4 animate-pulse">
                                     --- CHECK IT OUT ---
                                 </p>
-                                <h1 
-                                    data-aos="zoom-in" 
+                                <h1
+                                    data-aos="zoom-in"
                                     data-aos-delay="200"
                                     className="font-playfair mb-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold exo text-shimmer"
                                 >
                                     FROM OUR MENU
                                 </h1>
-                                <div 
-                                    data-aos="fade-up" 
+                                <div
+                                    data-aos="fade-up"
                                     data-aos-delay="400"
                                     className="w-24 h-1 bg-amber-400 mx-auto mt-6 animate-glow"
                                 />
@@ -547,8 +548,8 @@ const Home = () => {
                             {/* Featured Item Section with Animations */}
                             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center justify-center">
                                 {/* Image Section */}
-                                <div 
-                                    data-aos="fade-right" 
+                                <div
+                                    data-aos="fade-right"
                                     data-aos-duration="1000"
                                     className="lg:w-1/2 w-full hover-lift"
                                 >
@@ -567,8 +568,8 @@ const Home = () => {
                                 </div>
 
                                 {/* Content Section */}
-                                <div 
-                                    data-aos="fade-left" 
+                                <div
+                                    data-aos="fade-left"
                                     data-aos-duration="1000"
                                     data-aos-delay="200"
                                     className="lg:w-1/2 w-full text-left"
@@ -609,8 +610,8 @@ const Home = () => {
                             </div>
 
                             {/* Animated Navigation Dots */}
-                            <div 
-                                data-aos="fade-up" 
+                            <div
+                                data-aos="fade-up"
                                 data-aos-delay="400"
                                 className="flex justify-center mt-12 space-x-2"
                             >
@@ -625,6 +626,12 @@ const Home = () => {
 
             {/* Testimonials Section with Animations */}
             <Testimonial></Testimonial>
+
+
+            <Helmet>
+                <title>Innova || Home</title>
+                <link rel="canonical" href="https://www.tacobell.com/" />
+            </Helmet>
         </div>
     );
 };
