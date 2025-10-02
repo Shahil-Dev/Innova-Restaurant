@@ -1,31 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import useMenu from './Hooks/useMenu';
 
 const PopularItem = () => {
-    const [menu, setMenu] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    useEffect(() => {
-        const fetchMenu = async () => {
-            try {
-                setLoading(true);
-                const response = await fetch("/assets/menu.json");
-                if (!response.ok) {
-                    throw new Error('Failed to fetch menu data');
-                }
-                const data = await response.json();
-                const popularItems = data.filter(i => i.category === "popular");
-                setMenu(popularItems);
-            } catch (err) {
-                setError(err.message);
-                console.error('Error fetching menu:', err);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchMenu();
-    }, []);
+    const [menu, loading, error] = useMenu();
+    const list = menu.filter(item => item.category === 'popular');
 
     if (loading) {
         return (
@@ -90,7 +67,7 @@ const PopularItem = () => {
             {/* Menu Grid */}
             <div className='max-w-6xl mx-auto '>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {menu.map(item => (
+                    {list.map(item => (
                         <div
                             key={item.id}
                             className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
