@@ -130,3 +130,46 @@ html {
 .shine-effect:hover::before {
     left: 100%;
 }
+
+
+/* Only enable complex animations when not scrolling */
+.scroll-active * {
+    animation-duration: 0s !important;
+    transition-duration: 0.1s !important;
+}
+
+/* Reduce animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Force GPU acceleration */
+.overflow-hidden {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+}
+
+.performance-optimized {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    will-change: transform;
+}
+
+/* Optimize image rendering */
+img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}

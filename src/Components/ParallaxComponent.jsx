@@ -151,7 +151,7 @@ const ParallaxComponent = () => {
                                 <div
                                     key={i}
                                     className={`absolute w-3 h-3 rounded-full animate-float ${i % 3 === 0 ? 'bg-orange-400' :
-                                            i % 3 === 1 ? 'bg-purple-400' : 'bg-amber-400'
+                                        i % 3 === 1 ? 'bg-purple-400' : 'bg-amber-400'
                                         }`}
                                     style={{
                                         left: `${Math.random() * 100}%`,
@@ -209,7 +209,7 @@ const ParallaxComponent = () => {
                             </p>
 
                             {/* Enhanced CTA Buttons */}
-                            <div className="flex flex-col sm:flex-row gap-8 justify-center items-center animate-fade-up" style={{ animationDelay: '1.6s' }}>
+                            {/* <div className="flex flex-col sm:flex-row gap-8 justify-center items-center animate-fade-up" style={{ animationDelay: '1.6s' }}>
                                 <Link to="/menu">
                                     <button className="group relative bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-black py-6 px-16 rounded-3xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl overflow-hidden border-2 border-orange-300/30">
                                         <span className="relative z-10 flex items-center space-x-4 text-xl">
@@ -227,7 +227,7 @@ const ParallaxComponent = () => {
                                         <span className="group-hover:rotate-180 transition-transform duration-500 text-2xl">🎯</span>
                                     </span>
                                 </button>
-                            </div>
+                            </div> */}
 
                             {/* Enhanced Animated Stats */}
                             <div className="grid grid-cols-3 gap-12 max-w-3xl mx-auto mt-20 animate-fade-up" style={{ animationDelay: '2s' }}>
@@ -252,7 +252,7 @@ const ParallaxComponent = () => {
                         </div>
 
                         {/* Enhanced Scroll Indicator */}
-                        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce-subtle">
+                        {/* <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce-subtle">
                             <div className="flex flex-col items-center space-y-4">
                                 <span className="text-white text-lg font-semibold bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full">
                                     Scroll to Discover Magic
@@ -261,7 +261,7 @@ const ParallaxComponent = () => {
                                     <div className="w-1.5 h-4 bg-white/80 rounded-full mt-3 animate-pulse"></div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </Parallax>
             </section>

@@ -6,8 +6,10 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 const NAV_ITEMS = [
   { name: "Home", href: "/" },
   { name: "Our Menu", href: "/menu" },
-  { name: "Dashboard", href: "/dashboard" },
+  { name: "Order", href: "/order" },
   { name: "Contact Us", href: "/contact" },
+  { name: "Dashboard", href: "/dashboard" },
+
 ];
 
 const BRAND_CONFIG = {
@@ -60,14 +62,12 @@ export default function Navbar() {
     },
   };
 
-  const getNavLinkClass = ({ isActive }) => 
-    `${navLinkClasses.desktop.base} ${
-      isActive ? navLinkClasses.desktop.active : navLinkClasses.desktop.inactive
+  const getNavLinkClass = ({ isActive }) =>
+    `${navLinkClasses.desktop.base} ${isActive ? navLinkClasses.desktop.active : navLinkClasses.desktop.inactive
     }`;
 
   const getMobileNavLinkClass = ({ isActive }) =>
-    `${navLinkClasses.mobile.base} ${
-      isActive ? navLinkClasses.mobile.active : navLinkClasses.mobile.inactive
+    `${navLinkClasses.mobile.base} ${isActive ? navLinkClasses.mobile.active : navLinkClasses.mobile.inactive
     }`;
 
   // Login button component for reusability
@@ -75,13 +75,11 @@ export default function Navbar() {
     <NavLink to="/login">
       {({ isActive }) => (
         <button
-          className={`flex items-center justify-center ${
-            isMobile ? "w-full px-6 py-3 text-lg" : "px-6 py-2 text-base"
-          } rounded-lg transition-all duration-300 font-semibold border ${
-            isActive
+          className={`flex items-center justify-center ${isMobile ? "w-full px-6 py-3 text-lg" : "px-6 py-2 text-base"
+            } rounded-lg transition-all duration-300 font-semibold border ${isActive
               ? "bg-[#FFD54F] text-gray-900 border-[#FFD54F] shadow-lg"
               : "bg-transparent text-white border-white/30 hover:bg-[#FFD54F] hover:text-gray-900 hover:border-[#FFD54F] hover:scale-105"
-          }`}
+            }`}
         >
           <User size={20} className={isMobile ? "mr-3" : "mr-2"} />
           Login
@@ -106,23 +104,22 @@ export default function Navbar() {
   );
 
   return (
-    <nav 
-      className={`w-full fixed top-0 left-0 z-50 transition-all duration-500 backdrop-blur-md ${
-        isScrolled 
-          ? "bg-black/95 shadow-2xl py-2 border-b border-white/10" 
-          : "bg-black/80 py-3"
-      }`}
+    <nav
+      className={`w-full fixed top-0 left-0 z-50 transition-all duration-500 backdrop-blur-md ${isScrolled
+        ? "bg-black/95 shadow-2xl py-2 border-b border-white/10"
+        : "bg-black/80 py-3"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          
+
           {/* Brand Logo */}
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="flex items-center space-x-3 group flex-shrink-0"
           >
             <span className="text-2xl">{BRAND_CONFIG.logo}</span>
-            <span className="text-3xl font-bold text-[#FFD54F] tracking-tight group-hover:scale-105 transition-transform duration-300">
+            <span className="text-3xl md:text-5xl font-bold text-[#FFD54F] tracking-tight exo group-hover:scale-105 transition-transform duration-300">
               {BRAND_CONFIG.name}
             </span>
           </Link>
@@ -130,7 +127,7 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-1">
             {NAV_ITEMS.map((item) => (
-              <NavLink 
+              <NavLink
                 key={item.name}
                 to={item.href}
                 className={getNavLinkClass}
@@ -144,7 +141,7 @@ export default function Navbar() {
           {/* Right Side Actions */}
           <div className="flex items-center space-x-4">
             <CartButton />
-            
+
             <div className="hidden lg:block">
               <LoginButton />
             </div>
@@ -163,12 +160,11 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div 
-        className={`lg:hidden transition-all duration-500 ease-in-out overflow-hidden ${
-          isOpen 
-            ? "max-h-96 opacity-100 bg-black/95 backdrop-blur-lg border-t border-white/10 shadow-2xl" 
-            : "max-h-0 opacity-0"
-        }`}
+      <div
+        className={`lg:hidden transition-all duration-500 ease-in-out overflow-hidden ${isOpen
+          ? "max-h-96 opacity-100 bg-black/95 backdrop-blur-lg border-t border-white/10 shadow-2xl"
+          : "max-h-0 opacity-0"
+          }`}
       >
         <div className="px-4 pt-2 pb-6 space-y-2">
           {NAV_ITEMS.map((item) => (
@@ -180,7 +176,7 @@ export default function Navbar() {
               {item.name}
             </NavLink>
           ))}
-          
+
           <div className="pt-4 border-t border-white/10">
             <LoginButton isMobile={true} />
           </div>

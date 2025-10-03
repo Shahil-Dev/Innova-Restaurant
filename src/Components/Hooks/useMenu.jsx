@@ -6,24 +6,25 @@ const useMenu = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch("/assets/menu.json")
-            .then(res => {
+        const fetchMenu = async () => {
+            try {
+                const res = await fetch("/assets/menu.json");
                 if (!res.ok) {
                     throw new Error("Failed to fetch menu data");
                 }
-                return res.json();
-            })
-            .then(data => {
+                const data = await res.json();
                 setMenu(data);
-                setLoading(false);
-            })
-            .catch(err => {
+            } catch (err) {
                 setError(err.message);
+            } finally {
                 setLoading(false);
-            });
+            }
+        };
+
+        fetchMenu();
     }, []);
 
-    return [menu, loading, error];  // now returning error as well
+    return [menu, loading, error];
 };
 
 export default useMenu;
