@@ -1,8 +1,8 @@
-import { Helmet } from 'react-helmet-async';
 import ParallaxComponent from '../Components/ParallaxComponent';
 import useMenu from '../Components/Hooks/useMenu';
 import { MdArrowRightAlt } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Menu = () => {
     const [menu, loading, error] = useMenu();
@@ -96,11 +96,7 @@ const Menu = () => {
 
     return (
         <div className="overflow-hidden">
-            <Helmet>
-                <title>Innova Restaurant | Gourmet Menu</title>
-                <meta name="description" content="Explore Innova's exquisite menu featuring gourmet dishes, desserts, pizzas, salads, and soups. Premium dining experience with fresh ingredients." />
-                <link rel="canonical" href="https://innova-restaurant.com/menu" />
-            </Helmet>
+
 
             <ParallaxComponent />
 
@@ -383,7 +379,7 @@ const Menu = () => {
                                 </button>
                             </Link>
 
-                       
+
                         </div>
 
                         {/* Additional Info */}
@@ -406,6 +402,14 @@ const Menu = () => {
 
                 </section>
             </div>
+
+
+
+
+            <Helmet>
+                <title>Innova || Menu</title>
+            </Helmet>
+
 
             {/* Custom Animations */}
             <style jsx>{`

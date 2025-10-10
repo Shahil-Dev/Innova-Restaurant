@@ -9,6 +9,7 @@ import Shop from "../Pages/Shop";
 import Login from "../Pages/Login";
 import Registration from "../Pages/Registration";
 import Order from "../Pages/Order";
+import PrivateRoute from "../Firebase/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard",
-        element: <Dashboard></Dashboard>
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
       },
       {
         path: "/cart",

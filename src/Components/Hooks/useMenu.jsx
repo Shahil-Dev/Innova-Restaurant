@@ -8,7 +8,7 @@ const useMenu = () => {
     useEffect(() => {
         const fetchMenu = async () => {
             try {
-                const res = await fetch("/assets/menu.json");
+                const res = await fetch(`${import.meta.env.VITE_LINK}/menu`);
                 if (!res.ok) {
                     throw new Error("Failed to fetch menu data");
                 }
