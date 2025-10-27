@@ -20,7 +20,7 @@ const AuthProvider = ({ children }) => {
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
-
+    //For all info use it!
     const google = async () => {
         setLoading(true);
         try {

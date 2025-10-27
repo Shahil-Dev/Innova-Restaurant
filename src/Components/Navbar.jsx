@@ -4,12 +4,14 @@ import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Firebase/AuthProvider";
 import { motion, AnimatePresence } from "framer-motion";
 import { CgProfile } from "react-icons/cg";
+import useCard from "./Hooks/useCard";
 
 // Constants for better maintainability
+
 const NAV_ITEMS = [
   { name: "Home", href: "/" },
-  { name: "Our Menu", href: "/menu" },
-  { name: "Order", href: "/order" },
+  { name: "Our Menu", href: "/order" },
+  { name: "Order ", href: "/menu" },
   { name: "Contact Us", href: "/contact" },
 ];
 
@@ -32,6 +34,7 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const location = useLocation();
+  const [card] = useCard()
   const navigate = useNavigate();
   const { user, logOut } = useContext(AuthContext);
 
@@ -117,12 +120,12 @@ export default function Navbar() {
       <Link to="/cart" className="relative group">
         <button className="relative p-2.5 text-gray-300 hover:text-amber-400 transition-all duration-300 bg-white/5 rounded-xl hover:bg-amber-500/10 border border-transparent hover:border-amber-400/30">
           <ShoppingCart size={22} />
-          <motion.span 
+          <motion.span
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             className="absolute -top-1 -right-1 bg-amber-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold shadow-lg border border-amber-300"
           >
-            0
+            {card.length}
           </motion.span>
         </button>
         <div className="absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 bg-gray-900 text-white text-xs px-3 py-1.5 rounded-lg mt-2 left-1/2 transform -translate-x-1/2 transition-all duration-300 whitespace-nowrap border border-gray-700 shadow-xl">
@@ -175,10 +178,10 @@ export default function Navbar() {
                 Dashboard
               </motion.button>
             </Link>
-            
-            
 
-            
+
+
+
           </div>
 
           {/* Logout Section */}
@@ -216,7 +219,7 @@ export default function Navbar() {
             className="flex-shrink-0"
           >
             <Link to="/" className="flex items-center space-x-3 group">
-              <motion.span 
+              <motion.span
                 animate={{ rotate: [0, 10, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
                 className="text-2xl"
@@ -240,7 +243,7 @@ export default function Navbar() {
               >
                 <NavLink to={item.href} className={getNavLinkClass}>
                   {item.name}
-                  <motion.div 
+                  <motion.div
                     className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full"
                     whileHover={{ width: "75%" }}
                     transition={{ duration: 0.3 }}
@@ -265,7 +268,7 @@ export default function Navbar() {
                   >
                     <motion.img
                       whileHover={{ rotate: 5 }}
-                      src={user.photoURL ?user.photoURL :<CgProfile />}
+                      src={user.photoURL ? user.photoURL : <CgProfile />}
                       alt={user.displayName}
                       className="w-8 h-8 rounded-full border-2 border-amber-400 shadow-lg"
                     />
@@ -378,8 +381,8 @@ export default function Navbar() {
 
       {/* Backdrop for profile dropdown */}
       {isProfileOpen && (
-        <div 
-          className="fixed inset-0 z-40" 
+        <div
+          className="fixed inset-0 z-40"
           onClick={() => setIsProfileOpen(false)}
         />
       )}

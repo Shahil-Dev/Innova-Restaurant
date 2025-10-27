@@ -4,7 +4,7 @@ const FoodCard = ({ item }) => {
     const { image, recipe, price, name } = item;
     const [isHovered, setIsHovered] = useState(false);
     const [imageLoaded, setImageLoaded] = useState(false);
-
+   
     return (
         <div
             className="group relative bg-white rounded-3xl p-6 border-2 border-gray-100 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden"
@@ -74,16 +74,7 @@ const FoodCard = ({ item }) => {
                         </div>
                     </div>
 
-                    {/* Add to Cart Button */}
-                    <button className="group/btn relative bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg overflow-hidden border border-orange-400/30">
-                        <span className="relative z-10 flex items-center space-x-2 text-sm font-semibold">
-                            <span>Add to Cart</span>
-                            <svg className="w-4 h-4 group-hover/btn:rotate-90 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                            </svg>
-                        </span>
-                        <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
-                    </button>
+                 
                 </div>
 
                 {/* Dietary Tags */}
